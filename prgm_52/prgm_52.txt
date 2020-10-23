@@ -1,0 +1,8 @@
+#prgm_52
+
+strlist=list()
+for lines in reversed(open("file52.txt").readlines()):
+    print(lines.rstrip())
+    strlist.append(lines.rstrip())
+    for string in strlist:
+      print(string[::-1])

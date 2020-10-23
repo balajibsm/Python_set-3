@@ -1,0 +1,115 @@
+fo = open("file1.txt", "r+")
+print("Name of the file: ", fo.name)
+fo.close()
+
+
+fo = open("file1.txt", "r")
+print("Name of the file: ", fo.name)
+fo.flush()
+fo.close()
+
+
+fo = open("file1.txt", "r+")
+print("Name of the file: ", fo.name)
+fid = fo.fileno()
+print("File Descriptor: ", fid)
+fo.close()
+
+
+fo = open("file1.txt", "r+")
+print("Name of the file:", fo.name)
+return = fo.isatty()
+print("Return value : ", return)
+fo.close()
+
+
+fo = open("file1.txt", "r+")
+print("Name of the file: ", fo.name)
+for index in range(2):
+   line = fo.next()
+   print("Line No %d - %s" % (index, line))
+fo.close()
+
+
+fo = open("file1.txt", "r+")
+print("Name of the file: ", fo.name)
+line = fo.read(100)
+print("Read Line: %s" % (line))
+fo.close()
+
+
+fo = open("file1.txt", "r+")
+print("Name of the file: ", fo.name)
+line = fo.readline()
+print("Read Line: %s" % (line))
+line = fo.readline(5)
+print("Read Line: %s" % (line))
+fo.close()
+
+
+fo = open("file1.txt", "r+")
+print("Name of the file: ", fo.name)
+line = fo.readlines()
+print("Read Line: %s" % (line))
+line = fo.readlines(2)
+print("Read Line: %s" % (line))
+fo.close()
+
+
+fo = open("file1.txt", "r")
+print("Name of the file: ", fo.name)
+line = fo.readline()
+print("Read Line: %s" % (line))
+fo.seek(0, 0)
+line = fo.readline()
+print("Read Line: %s" % (line))
+fo.close()
+
+
+fo = open("file1.txt", "r")
+print("Name of the file: ", fo.name)
+line = fo.readline()
+print("Read Line: %s" % (line))
+pos = fo.tell()
+print("Current Position: %d" % (pos))
+fo.close()
+
+
+
+
+fo = open("file1.txt", "r")
+
+f1 = open("C:\\Users\\KA20085024\\Desktop\\Python topgear\\python set3\\prgm_53\\file1.txt", "w")
+print("Name of the file: ", fo.name)
+line = fo.readline()
+print("Read Line: %s" % (line))
+
+f1.truncate()
+
+line = fo.readline()
+print("Read Line: %s" % (line))
+fo.close()
+
+
+fo = open("file1.txt", "rw+")
+
+print("Name of the file: ", fo.name)
+str = "This is new line"
+
+line = f0.write( str )
+fo.seek(0,0)
+lines=fo.read()
+print(lines)
+fo.close()
+
+
+fo = open("file1.txt", "rw+")
+print("Name of the file: ", fo.name)
+string = "This is a new line"
+
+line = fo.writelines( string )
+
+fo.seek(0,0)
+lines=fo.read()
+print(lines)
+fo.close()
