@@ -1,0 +1,49 @@
+#prgm_50
+
+fo=open("file1.txt","r")
+position=0
+while(True):
+    a=fo.read(10)
+    if not a:
+        break
+    else:
+        print(a)
+        position+=10
+        print("position=",position)
+
+
+f1=open("file1.txt","r")
+position=0
+while(position<100):
+    a=f1.read(10)
+    if not a:
+        break
+    else:
+        print(a)
+        position+=10
+        print("position=",position)        
+f1.seek(0)
+print(f1.read(10))
+
+
+fo=open("file1.txt","r")
+Counter = 0
+a=fo.read()
+b = a.split("\n")
+for i in b: 
+    if i: 
+        Counter += 1
+#print("Counter")
+for x in range(5, Counter):
+  print(fo.readline())
+ 
+
+#for line in fo:	
+	#print("line=",line)
+#fo.close()
+
+
+
+
+
+
