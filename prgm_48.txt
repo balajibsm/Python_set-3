@@ -1,0 +1,31 @@
+#prgm_48
+
+import math
+def Addition(a,b):
+  sum=a+b
+  print("sum is",sum)
+def Subtraction(a,b):
+  sub=a-b
+  print("Subtraction is",sub)
+def Multiply(a,b):
+  mul=a*b
+  print("multiplication is",mul)
+def Division(a,b):
+  div=a/b
+  print("Division is",div)
+def Sqrt(num):
+  print("Sqrt is ",math.sqrt(num))
+Addition(2,3)
+Subtraction(5,2)
+Multiply(5,5)
+Division(6,3)
+Sqrt(16)
+
+def subStr(string1,delimiterchar):
+  subStr= string1.split(delimiterchar,6)
+  print("Original String is",string1)
+  return subStr
+string="I:am:from:abc"
+delimiter=':'
+subStr= subStr(string,delimiter)
+print("Substring from string is",subStr)

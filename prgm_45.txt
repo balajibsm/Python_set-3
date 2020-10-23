@@ -1,0 +1,15 @@
+#prgm_45
+
+def PalindromeCheck(myStr):
+  'this checks for the palindrokme string'
+  #myStr="Hello buddy"
+  myStr=myStr.lower()
+  myStr1=myStr[::-1]
+  if myStr==myStr1:
+    print("The given string",myStr,"is palindrome")
+  else:
+    print("The given string",myStr,"is not palindrome")
+  return
+myStr=input("Enter the string")
+
+PalindromeCheck(myStr)
