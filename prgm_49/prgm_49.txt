@@ -1,0 +1,16 @@
+#prgm49
+
+f = open("file1.txt", "r")
+print("Read String is : ",f.read())
+f.close()
+
+
+f1=open("file2.txt","w")
+f1.writelines("Happy day\nHappy year\nxyz\nI love flowers\nGood morning")
+f1.close()
+
+
+
+f1=open("file2.txt","a")
+f1.writelines("\nHi\nNice to meet you\nExcited\nPython programming\nEnjoy well")
+f1.close()
